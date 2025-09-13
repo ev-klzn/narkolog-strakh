@@ -1,20 +1,48 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1757671233519"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1757671233519">
+		<link rel="shortcut icon" href="assets/img/favicon.ico">
+		<title>Home</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1757763598433"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1757763598433">
+		<link rel="preload" as="style" href="./css/webfonts.min.css">
+		<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="./css/webfonts.min.css">
 	</head>
 	<body>
 		<div class="wrapper">
 			<header data-fls-header="" class="header">
 				<div class="header__container">
-					<!-- <include src="@components/layout/menu/menu.html" locals='{"active":"Home"}'></include> -->
+					<div class="header__body">
+						<!-- перевірка якщо головна сторінка то блок, інша - посилання -->
+						<div class="header__logo">
+							<!-- <img class="header__image ibg" src="@img/logo.svg" alt="logo"> -->
+							<div class="header__logo-name header__logo-name--no-wrap">Нарколог Петро Страх</div>
+						</div>
+						<div class="header__menu menu">
+							<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+								<span></span>
+							</button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#" class="menu__link">Послуги</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Про нас</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">Контакти</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<a data-fls-dynamic=".menu__list, 767.98, 10" href="#" data-fls-button="" class="button">Консультація</a>
+					</div>
 				</div>
 			</header>
+			<!-- додано перевірку "home":"true" для if else в header -->
 			<main class="page page--home">
 				<div class="page__container"></div>
 			</main>
