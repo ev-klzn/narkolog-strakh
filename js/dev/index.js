@@ -27,8 +27,6 @@
     fetch(link.href, fetchOpts);
   }
 })();
-function FLS(text, vars = "") {
-}
 let bodyLockStatus = true;
 let bodyLockToggle = (delay = 500) => {
   if (document.documentElement.hasAttribute("data-fls-scrolllock")) {
@@ -86,7 +84,6 @@ class DynamicAdapt {
     this.objects = [];
     this.daClassname = "--dynamic";
     this.nodes = [...document.querySelectorAll("[data-fls-dynamic]")];
-    FLS("_FLS_DA_START", this.nodes.length);
     this.nodes.forEach((node) => {
       const data = node.dataset.flsDynamic.trim();
       const dataArray = data.split(`,`);
@@ -136,7 +133,6 @@ class DynamicAdapt {
     }
   }
   moveTo(place, element, destination) {
-    FLS("_FLS_DA_MOVETO", [element.classList[0], destination.classList[0]]);
     element.classList.add(this.daClassname);
     const index = place === "last" || place === "first" ? place : parseInt(place, 10);
     if (index === "last" || index >= destination.children.length) {
@@ -154,7 +150,6 @@ class DynamicAdapt {
     } else {
       parent.append(element);
     }
-    FLS("_FLS_DA_MOVEBACK", [element.classList[0], parent.classList[0]]);
   }
   indexInParent(parent, element) {
     return [...parent.children].indexOf(element);
