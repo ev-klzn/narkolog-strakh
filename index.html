@@ -5,19 +5,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="assets/img/favicon.ico">
 		<title>Home</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1757935392147"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1757935392147">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1757944898194"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1757944898194">
 		<link rel="preload" as="style" href="./css/webfonts.min.css">
 		<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="./css/webfonts.min.css">
 	</head>
 	<body>
 		<div class="wrapper">
-			<header data-fls-header="" class="header">
+			<header data-fls-header="" data-fls-header-scroll="" class="header">
 				<div class="header__container">
 					<div class="header__body">
 						<!-- перевірка якщо головна сторінка то блок, інша - посилання -->
 						<div class="header__logo">
-							<!-- <img class="header__image ibg" src="@img/logo.svg" alt="logo"> -->
+							<img class="header__image ibg" src="./assets/img/logo.svg" alt="logo">
 							<div class="header__logo-name header__logo-name--no-wrap">Нарколог Страх Петро</div>
 						</div>
 						<div class="header__menu menu">
@@ -38,45 +38,27 @@
 								</ul>
 							</nav>
 						</div>
-						<a data-fls-dynamic=".menu__list, 767.98, 99" href="#" data-fls-button="" class="button">Консультація</a>
+						<a data-fls-dynamic=".menu__list, 991.98, 99" href="#" data-fls-button="" class="button">Консультація</a>
 					</div>
 				</div>
 			</header>
 			<!-- додано перевірку "home":"true" для if else в header -->
 			<main class="page page--home">
-				<!--
-<section class="page__hero hero">
-<div class="hero__container">
-<div class="hero__body">
-<h1 class="hero__title title">Get ready for your best ever Dental Experience!</h1>
-<div class="hero__text text">
-<p>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
-</div>
-<div class="hero__actions">
-<a href="#" class="button">Консультація</a>
-<div class="hero__actions-body">
-<div class="hero__actions-img"><img class="hero__actions-image ibg" src="@img/icons/calling.svg" alt="Image"></div>
-<div class="hero__actions-column">
-<div class="hero__actions-title"></div>
-<a href="tel:000000000" class="hero__actions-tel">000000000</a>
-</div>
-</div>
-</div>
-</div>
-<div class="hero__photo"><img class="hero__photo-img ibg" src="@img/photo.jpg" alt="Image">
-</div>
-</section>
--->
 				<div class="page__container">
 					<section class="page__hero hero">
 						<div class="hero__content">
 							<div class="hero__body">
-								<h1 class="hero__tilte title">tilte</h1>
+								<h1 class="hero__tilte title title">
+									Get ready for your best ever Dental
+									<span class="underline">Experience!</span>
+								</h1>
 								<div class="hero__items">
 									<div class="hero__item item-hero">
 										<div class="item-hero__body">
-											<div class="item-hero__text">
-												<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+											<div class="item-hero__text text">
+												<p>
+													We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.
+												</p>
 											</div>
 											<div class="hero__actions">
 												<a href="#" class="button">Консультація</a>
@@ -86,7 +68,7 @@
 													</div>
 													<div class="hero__actions-column">
 														<div class="hero__actions-title"></div>
-														<a href="tel:000000000" class="hero__actions-tel">000000000</a>
+														<a href="tel:0999999999" class="hero__actions-tel hero__actions-tel hover">0999999999</a>
 													</div>
 												</div>
 											</div>
@@ -103,6 +85,44 @@
 							</div>
 						</div>
 					</section>
+					<section class="page__services services">
+						<div class="services__container">
+							<h2 class="services__title services__title--center title">
+								<span class="underline">Services</span>
+							</h2>
+							<div class="services__text text text--center">
+								<p>
+									We use only the best quality materials on the market in order to provide the best products to our patients.
+								</p>
+							</div>
+							<div class="services__list">
+								<article class="services__item item-services">
+									<h3 class="item-services__title">Root Canal Treatment</h3>
+									<div class="item-services__text text">
+										<p>
+											Root canal treatment (endodontics) is a dental procedure used to treat infection at the centre of a tooth.
+										</p>
+									</div>
+									<a href="#" data-fls-popup-link="popup-1" class="item-services__link">Learn More</a>
+								</article>
+							</div>
+						</div>
+					</section>
+					<div data-fls-popup="popup-1" aria-hidden="true" class="popup">
+						<div data-fls-popup-wrapper="" class="popup__wrapper">
+							<div data-fls-popup-body="" class="popup__body">
+								<button data-fls-popup-close="" type="button" class="popup__close">
+									<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square"></path>
+										<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square"></path>
+									</svg>
+								</button>
+								<div data-fls-popup-content="" class="popup__text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et excepturi magnam modi ab molestiae iusto necessitatibus. Sunt aliquid, eveniet, mollitia aspernatur eius quos sed impedit, commodi totam sit velit assumenda.
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</main>
 			<footer data-fls-footer="" class="footer">
