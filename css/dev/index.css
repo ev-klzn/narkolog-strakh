@@ -344,45 +344,45 @@ svg {
   color: var(--Dark-Blue-Design, #011632);
   font-weight: 500;
 }
-.welcom__container {
+.welcome__container {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: 1.5625rem;
   align-items: center;
 }
-.welcom__title {
+.welcome__title {
   margin-bottom: 1.25rem;
 }
-.welcom__text {
+.welcome__text {
   margin-bottom: 2.5rem;
 }
-.welcom__form-block {
+.welcome__form-block {
   position: relative;
 }
-.welcom__form-block .button {
+.welcome__form-block .button {
   position: absolute;
   top: 0;
   right: 0;
   border-radius: 0 0.625rem 0.625rem 0;
 }
-.welcom__form-body {
+.welcome__form-body {
   max-width: 27.5rem;
   position: relative;
 }
-.welcom__form-img {
+.welcome__form-img {
   position: absolute;
   top: 1.125rem;
   left: 0.625rem;
   width: 1.5rem;
   height: 1.5rem;
 }
-.welcom__img {
+.welcome__img {
   margin-right: 1.875rem;
   border-radius: 0.625rem;
   position: relative;
   aspect-ratio: 413/362;
 }
-.welcom__img::before {
+.welcome__img::before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -394,7 +394,7 @@ svg {
   overflow: hidden;
   background: linear-gradient(53deg, rgba(37, 180, 248, 0) 0%, rgba(37, 180, 248, 0.47) 64.42%, #25b4f8 126.21%);
 }
-.welcom__image {
+.welcome__image {
   border-radius: 0.625rem;
   overflow: hidden;
   aspect-ratio: 413/362;
@@ -723,26 +723,26 @@ body::after {
   .services__list {
     grid-template-columns: auto;
   }
-  .welcom__container {
+  .welcome__container {
     padding-left: 6.25e-8rem;
   }
-  .welcom__container {
+  .welcome__container {
     padding-right: 6.25e-8rem;
   }
-  .welcom__container {
+  .welcome__container {
     grid-template-columns: auto;
     gap: 4.0625rem;
   }
-  .welcom__text {
+  .welcome__text {
     margin-bottom: 1.875rem;
   }
-  .welcom__form-body {
+  .welcome__form-body {
     max-width: 100%;
   }
-  .welcom__img {
+  .welcome__img {
     margin-right: 0.9375rem;
   }
-  .welcom__img::before {
+  .welcome__img::before {
     top: -0.9375rem;
     right: -0.9375rem;
   }
@@ -935,10 +935,10 @@ body::after {
   .page__hero {
     padding-top: clamp( 9.375rem , 3.75036619663125rem  +  11.7182922542vw , 13.125rem );
   }
-  .welcom__container {
+  .welcome__container {
     padding-left: clamp( 6.25e-8rem , -4.21847519628125rem  +  8.7887189954vw , 2.8125rem );
   }
-  .welcom__container {
+  .welcome__container {
     padding-right: clamp( 6.25e-8rem , -6.56207261435rem  +  13.6713407679vw , 4.375rem );
   }
 }
@@ -959,10 +959,10 @@ body::after {
   .page__hero {
     padding-top: 13.125rem;
   }
-  .welcom__container {
+  .welcome__container {
     padding-left: 2.8125rem;
   }
-  .welcom__container {
+  .welcome__container {
     padding-right: 4.375rem;
   }
 }
