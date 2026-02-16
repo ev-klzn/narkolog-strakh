@@ -234,7 +234,7 @@ svg {
   background-image: url("../assets/img/underline.webp");
   content: "";
   position: absolute;
-  bottom: -0.5rem;
+  bottom: -0.3125rem;
   left: 0;
   width: 100%;
   height: auto;
@@ -366,6 +366,7 @@ svg {
   border-radius: 0 0.625rem 0.625rem 0;
 }
 .welcom__form-body {
+  max-width: 27.5rem;
   position: relative;
 }
 .welcom__form-img {
@@ -376,6 +377,7 @@ svg {
   height: 1.5rem;
 }
 .welcom__img {
+  margin-right: 1.875rem;
   border-radius: 0.625rem;
   position: relative;
   aspect-ratio: 413/362;
@@ -725,7 +727,7 @@ body::after {
     padding-left: 6.25e-8rem;
   }
   .welcom__container {
-    padding-right: 1.875rem;
+    padding-right: 6.25e-8rem;
   }
   .welcom__container {
     grid-template-columns: auto;
@@ -733,6 +735,16 @@ body::after {
   }
   .welcom__text {
     margin-bottom: 1.875rem;
+  }
+  .welcom__form-body {
+    max-width: 100%;
+  }
+  .welcom__img {
+    margin-right: 0.9375rem;
+  }
+  .welcom__img::before {
+    top: -0.9375rem;
+    right: -0.9375rem;
   }
   .input__phone {
     padding-right: 8.75rem !important;
@@ -927,7 +939,7 @@ body::after {
     padding-left: clamp( 6.25e-8rem , -4.21847519628125rem  +  8.7887189954vw , 2.8125rem );
   }
   .welcom__container {
-    padding-right: clamp( 1.875rem , -4.68707277059375rem  +  13.6713409632vw , 6.25rem );
+    padding-right: clamp( 6.25e-8rem , -6.56207261435rem  +  13.6713407679vw , 4.375rem );
   }
 }
 @media (min-width: 47.99875em) {
@@ -951,7 +963,7 @@ body::after {
     padding-left: 2.8125rem;
   }
   .welcom__container {
-    padding-right: 6.25rem;
+    padding-right: 4.375rem;
   }
 }
 @media (min-width: 81.875em) {
